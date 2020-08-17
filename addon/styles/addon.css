@@ -1,3 +1,9 @@
 .tinymce-editor {
   display: none;
 }
+@font-face {
+  font-family: tinymce-mobile;
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/tinymce-mobile.woff) format('woff')
+}

@@ -7,9 +7,8 @@ module.exports = {
     var content = '';
 
     if (type === 'head-footer' && config['tinyMCE'] && config['tinyMCE']['load']) {
-      var src = "https://cdn.tinymce.com/"+ config['tinyMCE']['version'] +"/tinymce.min.js";
-      var sriHash = config['tinyMCE']['sriHash'];
-      content = '<script type="text/javascript" src="' + src + '" integrity="' + sriHash + '" crossorigin="anonymous"></script>';
+      var src = "//cdnjs.cloudflare.com/ajax/libs/tinymce/"+ config['tinyMCE']['version'] +"/tinymce.min.js";
+      content = '<script type="text/javascript" src="' + src + '"></script>';
     }
     return content;
   },
